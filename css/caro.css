@@ -1,0 +1,63 @@
+h1{
+	color: red;
+	size: 30px;
+	text-align: center;
+}
+.caro{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 300px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 100px 100px 100px;
+	grid-template-areas: 
+	"o1 o2 o3"
+	"o4 o5 o6"
+	"o7 o8 o9";
+}
+.item{
+	border: 1px solid orange;
+}
+.o1{
+	grid-area: o1;
+	border-top: none;
+	border-left: none;
+}
+.o2{
+	grid-area: o2;
+	border-top: none;
+}
+.o3{
+	grid-area: o3;
+	border-top: none;
+	border-right: none;
+}
+.o4{
+	grid-area: o4;
+	border-left: none;
+}
+.o5{
+	grid-area: o5;
+}
+.o6{
+	grid-area: o6;
+	border-right: none;
+}
+.o7{
+	grid-area: o7;
+	border-left: none;
+	border-bottom: none;
+}
+.o8{
+	grid-area: o8;
+	border-bottom: none;
+}
+.o9{
+	grid-area: o9;
+	border-right: none;
+	border-bottom: none;
+}
+span{
+	font-size: 50px;
+	margin: 30px 0 0 30px;
+}
